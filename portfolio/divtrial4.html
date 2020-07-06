@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The slanted div</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/hoverJS.js"></script>
+</head>
+<body>
+	<div id="main-content">
+	<header>
+      <div class="container">
+        <div class="row">
+          <div id="headerImage" class=" col-xs-6 col-sm-5 col-md-4">
+            <img src="images/myPhoto1.jpg" alt="my profile pic" id="mypic">        
+          </div>
+          <div id="MyName" class="col-xs-6 col-sm-7 col-md-8">
+            <h1> Nikhil V</h1>        
+          </div>
+        </div>
+      </div>
+      <!-- navigation section-->
+     <nav class="navbar  navbar-default navbar-custom">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">Brand</div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a href="home.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="divtrial4.html">MY PROJECTS</a></li>
+             <li><a href="contactMe.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </div>
+     </nav>
+
+    </header>
+	<div class="container-flow">
+	<!--    carousal -->
+
+	<h2>My JAVA Projects</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 3%">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/Binary/image1.jpg" alt="Binary search tree image" style="width:100%;">
+        <div class="carousel-caption" >
+          <h3 style="color: black;">The Visualization of the Binary search Tree</h3>
+          <p style="color: black;" class="hidden-xs">This program is a nice fun to play and enjoy</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/quickSort/quick1.jpg" alt="The quick sort image" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 style="color: black;"> The visualization of the Quick Sort</h3>
+          <p style="color: black;" class="hidden-xs">This program is for fun</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/dataEntry/image3.jpg" alt="The data entry syatem image" style="width:100%;">
+        <div class="carousel-caption">
+          <h3> The Data Entry System</h3>
+          <p class="hidden-xs">This demonstrate the power of inheritance</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/calculator/image3.jpg" alt="Calculator image" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>The calculator program</h3>
+          <p class="hidden-xs">This is a trial to memic the scientific calculator to perform arithmetic operations written in expressions of numbers</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/timetable/image1.jpg" alt="Time table image(the first screen)" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 >The Time Table App</h3>
+          <p class="hidden-xs">This is used for designing time tables</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+	<!-- data -->
+	<div class="slanteddiv row">
+		<div class="image" >
+			<img src="images/Binary/bst41.jpg" id="image1" class="image12" alt="BST IMAGE images" onmouseover="imageOut(1);" onmouseout="imageIn(1);">
+		</div>
+		<div class="content ">
+			<h3> The Visualization of the Binary search Tree</h3>
+			<p>This is a small GUI program in java meant for the visually getting to know how the elements are added or how the elements are deleted from the Binary  Search Tree.<br>
+			This tool will be helpful when ever the teacher is teaching the concepts of the Binary search tree Operations , so theat the students can easily understand.<br>
+			This java Program GUI has 3 buttons<br>
+  			Add Element :- This is used for adding element to BST and the input is given by the user<br>
+  			Delete Element :- This is used for deleting element to BST and the input is given by the user  <br>
+  			Clear :- This is just a small button to clear the whole tree</p><br>
+		</div>
+	</div>
+	<div class="slanteddiv2 row">
+		<div class="image">
+			<img src="images/quickSort/quick1.jpg" id="image2" class="image12" alt=" Quick Sort images" onmouseover="imageOut(2);" onmouseout="imageIn(2);">
+		</div>
+		<div class="content ">
+			<h3> The visualization of the Quick Sort</h3>
+			<p>
+				This is a smaill GUI Program in java which is  used to show how efficient is the Quick sort Algorithm helps in sorting the elements in a given array.
+			</p><br>
+		</div>
+	</div>
+	<div class="slanteddiv row">
+		<div class="image">
+			<img src="images/dataEntry/data11.jpg" id="image3" class="image12" alt="Data Entry images" onmouseover="imageOut(3);" onmouseout="imageIn(3);">
+		</div>
+		<div class="content ">
+			<h3> The Data Entry System</h3>
+			<p>
+				This Project is used for entering the students details and saving in a test file in the secondary memory so that the data can be retrived in future .<br>
+				As you can see in the pic there are 4 tabs which means you can use this to enter the details of 4 types of students in this project.<br>
+				This project is an example of a project based purely on the inheritance which is the most important feature in Java which helps in code reuseability.
+			</p><br>
+		</div>
+	</div>
+	<div class="slanteddiv2 row">
+		<div class="image">
+			<img src="images/calculator/calc11.jpg" id="image4" class="image12" alt="Calculator images" onmouseover="imageOut(4);" onmouseout="imageIn(4);">
+		</div>
+		<div class="content ">
+			<h3> Calculator App</h3>
+			<p>
+				This is a small Desktop APP which is helpful for doing calculations<br>
+				This was created as an inspiration for solving of the infix expression which can be solved using the scientific calculator.<br>
+				This app is a logical extension of the program which we used to solve only signal digit operand infix expression.<br>
+				This app has the buttons 0-9,+,-,*,/,=,C,(,),. whose meaning can be understood by having a look at the symbols.<br>
+			</p><br>
+		</div>
+	</div>
+	<div class="slanteddiv row">
+		<div class="image">
+			<img src="images/timetable/timetable11.jpg" id="image5" class="image12" alt="Time Table images" onmouseover="imageOut(5);" onmouseout="imageIn(5);">
+		</div>
+		<div class="content ">
+			<h3> The Time Table App</h3>
+			<p>
+				This a system used for preparing the time table during the beginning of the semester in engineering colleges or during the beginning of the acedemic year in  the schools.
+				<br>
+				As in most of the engineering colleges students have to move to different classrooms to attend different classes, there might be a classroom alloted to two different classes at a time. This app is helpful in detecting those clashes which arise in the timetable so that these don't take place or even the case may be for the single teacher alloted to teach two classes at the same time.  <br>
+				As you may see the pics of this App you can check Day wise if there are any clashes and even with the whole time table i.e all the 6 days at once.<br>
+				The security is not implemented to have the edit option only for admin .<br>
+				The "Check Row" button is used to check the particular day only with the other class time table already present or prepared via this app and the "Check" button is to check the whole Time table.<br>
+			</p><br>
+		</div>
+	</div>
+</div>
+</div>
+<footer>
+	<p>Copyright © 2020 by Nikhil V</p>
+</footer>
+</body>
+</html>
