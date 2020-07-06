@@ -1,0 +1,285 @@
+/*-----header section-------*/
+		/*--------the name and pic section-------*/
+		.container{
+	        background: green;
+	        color:white;
+	        margin:1em;
+	        padding: 1em;
+	        border-radius: 2em;
+	        /*width:auto;*/
+	        height: auto;
+	      }
+	      #mypic{
+	        width:45%;
+	        border-radius: 4em;
+	      }
+	      #mypic img{
+	        left:2rem;
+	      }
+	      /*#nav{
+	        height:10em;
+	        background: green;
+	        margin:1em;
+	        border-radius: 2em;
+	      }*/
+	      #MyName{
+	        text-align: center;
+	        align-content: center;
+	        /*position: absolute;*/
+	        left: -5rem;
+	      }
+	      #MyName h1{
+	        font-size: 4rem;
+	      }
+	      /*--------navigation section******/
+	      /* Modify the background color */ 
+          
+        .navbar-custom { 
+            background-color: green; 
+            margin:1em;
+	        padding: 1em;
+	        border-radius: 2em;
+        } 
+        /* Modify brand and text color */ 
+          
+        .navbar-custom .navbar-brand, 
+        .navbar-custom .navbar-text { 
+            color: white; 
+        }
+        .collapse ul li{
+          color:darkgreen;
+          background: green;
+        } 
+        .navbar-default .navbar-nav > li > a {
+          color: white;
+          padding: 1em;
+          margin-left:0.25em;
+          margin-right:0.25em;
+        }
+        .navbar-default .navbar-nav > li > a:hover {
+          color: green;
+          background: white;
+        }
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+          color: green;
+          background-color: white;
+        }
+        
+        .navbar-default .navbar-toggle .icon-bar {
+          background-color: #fff;
+        }
+        .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+          color: #ffffff;
+          background-color: transparent;
+        }
+
+		/*------------------content section------*/
+		.container-flow{
+			margin: 5px;
+			background: #008000ad;
+			margin:1em;
+	        padding: 1em;
+	        border-radius: 2em;
+		}
+		.slanteddiv:before{
+			position: absolute;
+			content:"";
+			display: block;
+			left:0;
+			bottom: 0;
+			right: 0;
+			top:0;
+			margin-top: 1%;
+			margin-left: 3%;
+			margin-right: 5%;
+			background: green;
+			z-index: -1;
+			padding: 3rem;
+			transform: rotate(-1deg);
+		}
+		.slanteddiv{
+			position: relative;
+			display: inline-block;
+			width:97%;
+			padding: 2%;
+			z-index: 2;
+			margin-top: 2%;
+			margin-left: 3%;
+			margin-right: 5%;
+			color:white;
+			margin-bottom: 1%;
+		}
+		.slanteddiv2:before{
+			position: absolute;
+			content:"";
+			display: block;
+			left:0;
+			bottom: 0;
+			right: 0;
+			top:0;
+			margin-top: 1%;
+			margin-left: 3%;
+			margin-right: 5%;
+			background: green;
+			z-index: -1;
+			padding: 3rem;
+			transform: rotate(1deg);
+		}
+		.slanteddiv2{
+			position: relative;
+			display: inline-block;
+			padding: 2%;
+			z-index: 2;
+			margin-top: 2%;
+			margin-left: 1%;
+			color:white;
+			margin-bottom: 1%;
+			width:97%;
+		}
+		.image{
+			margin-top: 5%;
+			margin-bottom: 5%;
+			width:90%;
+		}
+		.image12{
+			width:90%;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-bottom: 5%;
+		}
+		.content{
+			margin-left: 5%;
+			margin-right: 1%;
+		}
+		@keyframes loadLeft{
+			0%{
+				margin-top: 0%; 
+				margin-left: 100%;
+				width:200%;
+			}
+			to{
+				/*margin-top: 2%;*/
+				margin-left: 0%;
+				width:100%;
+			}
+		}
+		.content>h3 , .content>p, .content>ul{
+			animation-duration: 3s;
+			animation-name: loadLeft;
+			padding-right: 4%;
+		}
+		/*@media (min-width: )*/
+			footer{
+				clear: both;
+				margin-top: 2%;
+				background: green;
+				height: 60px;
+				color: white;
+				text-align: center;
+
+			}
+			footer p{
+				line-height: 59px;
+			}
+			/*--------------------------CAROUSAL------------*/
+			.pics{
+	          height: 100px;
+	          margin: 20px;
+	          padding:10px;
+	        }
+	        
+	        .container {
+	        	width:auto;
+	          /*height: 100vh;*/
+	          /*display: flex;
+	          flex-direction: column;*/
+	        }
+	        .container-flow h2{
+	        	color: white;
+	        	text-align: center;
+	        	padding-top: 1%;
+	        }
+	        .carousel {
+    			position: relative;
+    			margin: 3% 2%;
+			}
+	        footer {
+	            flex-shrink: 0;
+	            background: #008000;
+	            margin:1em;
+	        	padding: 0em;
+	        	border-radius: 2em;
+	        	margin-top: 1em;
+	        }
+	        /*--------------- font awosme----------*/
+	        #mainContent{
+				min-height: 100vh;
+				margin-bottom: -60px;
+			}
+	        #Contact-links{
+				background: green;
+				margin:1em;
+	        	padding: 1em;
+	        	border-radius: 2em;
+	        	color:white;
+			}
+			.contacts{
+				width:100%;
+			}
+	        svg:not(:root).svg-inline--fa {
+				height: 60px;
+    			width: 10%;
+    			color:white;
+    			margin-left: 8%;
+				margin-top: 2%;
+			}
+	        /*--------------- media-----*/
+	        @media (min-width: 730px){
+	        	/*---header --*/
+	        	#MyName{
+		          left:-5em;
+		          top:0rem;
+		        }
+		        #MyName h1{
+		          font-size: 8rem
+		        }
+		        #mypic{
+		          margin-left: 5rem;
+		        }
+	        	/*---------*/
+			.image12{
+				width:40%;
+				margin-left: 4%;
+				margin-right: 4%;
+				float:left;
+				}
+			.slanteddiv{
+				width:100%;
+				}
+			.content{
+				width:45%;
+				margin-left: 4%;
+				margin-right: 4%;
+				float: left;
+				}
+			}
+			@media (min-width: 975px){
+	        #MyName{
+	          top:0rem;
+	        }
+	      }
+	      @media (min-width:1100px ){
+	        body{
+	          margin-left:10%;
+	          margin-right:10%;
+	        }
+	        #MyName{
+	          left:-10em;
+	        }
+	        #MyName h1{
+	          font-size: 10rem
+	        }
+	        #mypic{
+	          margin-left: 6rem;
+	        }
+	      }
